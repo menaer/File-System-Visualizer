@@ -1,0 +1,42 @@
+- Moving to Iteration 11 Monday 21-06-2010
+- Show stopper encountered in trying to do navigation (info sharing)
+- Show stopper encountered in trying to do navigation (sizers don't work)
+
+
+- Fixed showstopper - 'odd' strings in db using text_factory = str
+
+- 23-06-2010: Indexed Dr Magee's drive.
+- 24-06-2010: reigned myself in (on supervisor advice). Now attacking navigation using a small prototype without viz (i.e. using buttons and textctrls - see drilldown.py) and an index of Khoi's new drive 
+- 26-06-2010: Drilldown.py completed and working like a charm. Generates data fro each level on request and maintains forward and backward history. Now to convert to visual mode.
+- 27-06-2010: Excellent breakthrough. Created DBManager as a separate moduule and refactored code such that no need to order master data from db and also eliminated a lot of code in lvl0data. No longer needs to group data itself.
+- Looked into the crosshairs tutorial example. May be useful for tooltips later. Also noted the bbc worldcup schedule. Good, informative tooltips there.
+28-06-2010: Fixed a major bug of partial repaint. All I had to do was trap the size event and clear the screen there insted of using only the paint event.
+28-06-2010: Drilldown visual conversion 50% complete. Clicking and navigation yet to be done.
+
+
+WIP
+-------
+- level two should have the option to discarding the extensions and switching to 	full data set based on attributes like date created, date modified etc.
+- Right-click to select or deselect
+- Look into implementing the tabs per concept idea
+- Start work on the search engine
+- Aside: look into the scroll thing
+- How about the structure between the visualizations and the search.
+- update createfileindex to get all attributes of each file during walk (use os.stat)
+- Create a listctrl that recieves a list of files and displays them with generic/random icons.
+- New window for date range only. This one should have a dynamic level constructor thus the layers must be fixed.
+- Update the index creator to handle long pathnames (find some way to target the file without traversing the long pathname)
+- Update the artist to ignore drawing bars for zero names in the day level
+
+
+
+Challenges:
+-----------
+- WxPython is unwilling to embed a sizer (containing three windows).
+	this is looking like a major showstopper because my design is based on a notebook
+	and I intended to use a main window in each page as a container for all objects within the page.
+- The solution appears to lie in converting the different window classes (e.g. Histwindow etc) to panels.
+	this will the crux of activities in the 10th iteration including development of a basic search class
+	and a brief foray into the word of tag clouds.
+
+HOw to get deeply embedded classes to share info with higher level classes of other classes deeply embedded elsewhere.

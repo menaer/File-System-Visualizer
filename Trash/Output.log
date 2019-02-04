@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "F:\02 - Semester 2\04 - MSc Project\02 - Development\02 - Python Code\Iteration 12\00-Skeleton.py", line 50, in <module>
+    FnMain()
+  File "F:\02 - Semester 2\04 - MSc Project\02 - Development\02 - Python Code\Iteration 12\00-Skeleton.py", line 46, in FnMain
+    App = MySketchApp(True, 'Output.log')
+  File "C:\PROGRA~1\Python25\lib\site-packages\wx-2.8-msw-unicode\wx\_core.py", line 7819, in __init__
+    self._BootstrapApp()
+  File "C:\PROGRA~1\Python25\lib\site-packages\wx-2.8-msw-unicode\wx\_core.py", line 7416, in _BootstrapApp
+    return _core_.PyApp__BootstrapApp(*args, **kwargs)
+  File "F:\02 - Semester 2\04 - MSc Project\02 - Development\02 - Python Code\Iteration 12\00-Skeleton.py", line 12, in OnInit
+    self.frame = MyMainFrame()
+  File "F:\02 - Semester 2\04 - MSc Project\02 - Development\02 - Python Code\Iteration 12\00-Skeleton.py", line 7, in __init__
+    self.panel = MiddlePanel(self, -1) #passing self makes frame the parent
+  File "F:\02 - Semester 2\04 - MSc Project\02 - Development\02 - Python Code\Iteration 12\00-Skeleton.py", line 36, in __init__
+    self.win = VizWindow.VizWin(self, mgr=navs[0])
+NameError: global name 'VizWindow' is not defined
+Traceback (most recent call last):
+  File "Z:\00-Skeleton.py", line 73, in <module>
+    FnMain()
+  File "Z:\00-Skeleton.py", line 69, in FnMain
+    App = MySketchApp(True, 'Output.log')
+  File "C:\PROGRA~1\Python25\lib\site-packages\wx-2.8-msw-unicode\wx\_core.py", line 7819, in __init__
+    self._BootstrapApp()
+  File "C:\PROGRA~1\Python25\lib\site-packages\wx-2.8-msw-unicode\wx\_core.py", line 7416, in _BootstrapApp
+    return _core_.PyApp__BootstrapApp(*args, **kwargs)
+  File "Z:\00-Skeleton.py", line 12, in OnInit
+    self.frame = MyMainFrame()
+  File "Z:\00-Skeleton.py", line 7, in __init__
+    self.panel = ButtonPanel(self, -1)
+  File "Z:\00-Skeleton.py", line 31, in __init__
+    ('shopping',5),('cake',17),('bread',39),('pie',4)
+TypeError: 'tuple' object is not callable
