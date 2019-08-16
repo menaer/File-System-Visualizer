@@ -21,6 +21,7 @@ def dropTables(tableNames, cursor):
     return
 
 def cleanLine(word):
+    # This is a comment
     word = word.strip("\n").lower()
     if len(word.split()) > 1: return False # No spaces allowed
     if len(word.split('.')) > 1: return False # No dots allowed
